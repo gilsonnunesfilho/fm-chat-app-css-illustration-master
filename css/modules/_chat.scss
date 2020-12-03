@@ -1,0 +1,90 @@
+.app-body {
+  padding: 0.25em 0em;
+}
+
+.message-group {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-group > * + * {
+  margin-top: 1.25em;
+}
+
+.message {
+  font-size: 8px;
+  max-width: 25ch;
+  padding: 0.75em 1em;
+  font-weight: 400;
+  line-height: 1.25;
+  border-radius: 1.25em;
+}
+
+.message.from {
+  // background-color: rgba(255, 0, 0, 0.1);
+  border-bottom-left-radius: 0.375em;
+  color: var(--moderate-violet);
+  align-self: flex-start;
+}
+
+.message.to {
+  background-color: var(--white);
+  border-bottom-right-radius: 0.375em;
+  color: var(--desaturated-dark-violet);
+  align-self: flex-end;
+}
+
+.message.photos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.message.photos img {
+  width: 5em;
+  height: 5em;
+  border-radius: 1em;
+  margin-left: 0.75em;
+  display: block;
+}
+
+.message.input {
+  background-image: linear-gradient(
+    45deg,
+    var(--light-magenta),
+    var(--light-violet)
+  );
+  width: 100%;
+  max-width: 20em;
+  padding: 0;
+}
+
+.message.input label {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  height: 4em;
+  padding: 1em 2em 1em 1em;
+}
+
+.message.input input {
+  margin-top: 0;
+  margin-right: 0.5em;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.input-time {
+  font-size: 1em;
+  margin-top: 1px;
+}
+
+.input-price {
+  margin-left: auto;
+  font-size: 1.675em;
+  font-weight: 600;
+}
